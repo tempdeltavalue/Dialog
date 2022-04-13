@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <form method="POST" action="/">
+    <input type="text" id="search_value" name="search_value" value=""><br>
+    <input type="submit" value="Search">
+  </form>
+
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Монолог</th>
+        <th>Упражнение</th>
+        <th>Ок/Не ок</th>
+        <th>init_calm_ex_p</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user in users %}
+        <tr>
+          <td>{{ user.monologue }}</td>
+          <td>{{ user.exercise }}</td>
+          <td>{{ user.is_ok }}</td>
+          <td>{{ user.init_calm_ex_p }}</td>
+          <td><select name="D1">
+          <option value="after_break">after_break</option>
+          <option value="boost_productivity">boost_productivity</option>
+          <option value="calm_down">calm_down</option>
+          <option value="fall_asleep">fall_asleep</option>
+          <option value="ideal_relationship">ideal_relationship</option>
+          <option value="increase_happines">increase_happines</option>
+          <option value="lose_weight">lose_weight</option>
+            <option value="love_yourself">love_yourself</option>
+          <option value="make_a_decision">make_a_decision</option>
+          <option value="stop_anxiety">stop_anxiety</option>
+          <option value="stop_procrastinating">stop_procrastinating</option>
+		</select></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

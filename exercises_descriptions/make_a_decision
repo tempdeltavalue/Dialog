@@ -1,0 +1,4 @@
+Description: Интерактивная форма для Декартовых вопросов (Декартового квадрата). Подходит клиентам, которые не могут принять важное решение: Стоит ли менять работу? Нужно ли переезжать? Стоит ли расстаться с партнером? Нужно ли еще одно образование? Соглашаться на участие в новом проекте? И т.д. После ответа на декартовы вопросы клиенту предлагается выполнить мотивирующую визуализацию. 
+   URL: https://exercise.elomia.com/#/:token/MakeADecision
+       Intro message: If you can't make up your mind, try this exercise. It will allow you to become more confident, to assess all the consequences and to focus on the important ones | This short exercise was made by psychologists and helps to consider all the outcomes of your potential decision, while staying calm and self-confident.
+       Follow-up messages: $user, did you like this exercise? | $user, did this exercise help you? | $user, was it useful?

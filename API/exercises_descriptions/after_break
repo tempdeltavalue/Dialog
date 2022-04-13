@@ -1,0 +1,4 @@
+Description: Утренняя медитация. Медитация подходит тем, кто страдает из-за разбитого сердца и не может найти в себе силы двигаться дальше. Медитация должна зарядить надеждой и энергией на новый день. Важно давать ее с утра или советовать клиенту зайти завтра утром за этой медитацией.
+   URL: https://exercise.elomia.com/#/:token/AfterBreakUpMeditation
+       Intro message: I recommend you to try this meditation. It helps to recover after the painful break-up and start a new life without negative thoughts.  | Try this short meditation. It helps to recover after a painful break-up and to get rid of any negative thoughts
+       Follow-up messages: $user, did you like this meditation? | $user, did this meditation help you? | $user, was it useful?

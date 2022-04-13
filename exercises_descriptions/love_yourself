@@ -1,0 +1,4 @@
+Description: Медитация, которая подходит клиентам с сильным недовольством собой, особенно, если это недовольство касается внешности: веса, роста, фигуры, кожи и т.п. Медитация направлена на формирование позитивных установок в восприятии себя.
+   URL: https://exercise.elomia.com/#/:token/SelfLoveMeditation
+       Intro message: I recommend you to try this exercise. It helps to get rid of judgemental thoughts and replace them with positive ones | This exercise helps to accept yourself and to stop negative or critical thoughts. It`s short, so I recommend you to try it now
+       Follow-up messages: $user, did you like this meditation? | $user, did this meditation help you? | $user, was it useful?

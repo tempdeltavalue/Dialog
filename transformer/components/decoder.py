@@ -30,7 +30,7 @@ def decoder_layer(units, d_model, num_heads, dropout, name="decoder_layer"):
         'query': attention1,
         'key': enc_outputs,
         'value': enc_outputs,
-        'mask': padding_mask
+        'mask': look_ahead_mask  # padding_mask was before !!!!!!!!!!
     })
     attention2 = Dropout(rate=dropout)(attention2)
     add_attention = add([attention2, attention1])

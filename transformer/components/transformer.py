@@ -11,7 +11,7 @@ def transformer(vocab_size,
                 d_model,
                 num_heads,
                 dropout,
-                is_encoder=True,
+                is_encoder=False,
                 name="transformer"):
 
     inputs = Input(shape=(None,), name="inputs")
@@ -42,8 +42,14 @@ def transformer(vocab_size,
             dropout=dropout,
         )(inputs=[inputs, enc_padding_mask])
 
-    decoder_input = [dec_inputs, enc_outputs, look_ahead_mask, dec_padding_mask] if is_encoder \
-        else  [dec_inputs, dec_inputs, look_ahead_mask, dec_padding_mask]
+        decoder_input = [dec_inputs, enc_outputs, look_ahead_mask, dec_padding_mask]
+    else:
+        embeddings = Embedding(vocab_size, d_model)(dec_inputs)
+        #
+        # print("Embedding shape", embeddings.shape)
+        # # embeddings = PositionalEncoding(vocab_size, d_model)(embeddings)
+
+        decoder_input = [dec_inputs, embeddings, look_ahead_mask, dec_padding_mask]
 
     dec_outputs = decoder(
       vocab_size=vocab_size,
